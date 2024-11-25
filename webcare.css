@@ -1,0 +1,274 @@
+*{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(68, 222, 106);
+}
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+.nav-links li{
+    position: relative;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.nav-links li a:hover {
+    background-color: rgb(46, 157, 46);
+}
+.active{
+    background-color: rgb(46, 157, 46);
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(243, 242, 242);
+    border-radius: 20px;
+    width: 6px;
+    list-style-type: none;
+    min-width: 150px;
+    z-index: 1;
+}
+.dropdown li a {
+    border: none;
+    border-radius: 13px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+}
+.dropdown li a:hover {
+    background-color: rgb(46, 157, 46);
+}
+.nav-links li:hover .dropdown {
+    display: block;
+}
+.active{
+    background-color: rgb(46,157,46);
+}
+.Appointment {
+    font-size: 18px;
+    background-color: rgb(68, 222, 106);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.Appointment:hover{
+    transition: 0.6 ease-in;
+}
+#Home{
+    padding-top: 20spx;
+}
+#Home img{
+    float: right;
+    border: none;
+    border-radius: 50%;
+    padding-right: 90px;
+    padding-top: 40px;
+}
+#Home h1{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 170px;
+    color: black;
+    font-size: 60px;
+}
+#Home p{
+    font-size: 20px;
+    padding-bottom: 280px;
+    padding-left: 60px;
+    opacity: 20px;
+}
+.services h5{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(55, 167, 124);
+}
+.services h2{
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}.services p{
+    text-align: center;
+    word-spacing: 3px;
+    color: rgb(69, 67, 67);
+}
+.services img{
+    display: inline;
+    align-items: center;
+    padding-left: 60px;
+    padding-bottom: 150px;
+}
+.about img{
+    float: left;
+    border: none;
+    border-radius: 50%;
+    padding-left: 90px;
+}
+.about h5{
+    padding-top: 160px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(46, 157, 46);
+    padding-left: 190px;
+}
+.about h2{
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    padding-right: 40px;
+}
+.about p{
+    text-align: center;
+    color: rgb(69, 67, 67);
+    padding-right: 40px;
+}
+.choose{
+    padding-top: 260px;
+}
+.choose img{
+    float: right;
+    border: none;
+    border-radius: 40%;
+    padding-right: 150px;
+}
+.choose h5{
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(46,157,46);
+    padding-left: 200px;
+}
+.choose h2{
+    font-size: 55px;
+    color: black;
+    text-align: left;
+    padding-left: 120px;
+}
+.choose p{
+    text-align: left;
+    color: rgb(69, 67, 67);
+    padding-left: 120px;
+}
+.cards-containers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card img{
+    border-radius: 20px;
+    width: 315px;
+    height: auto;
+    object-fit: cover;
+}
+.card h2 p button{
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.card button{
+    display: inline-block;
+    background-color: rgb(46, 157, 46);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+#Contact{
+    min-height: 50vh;
+    text-align: center;
+}
+
+.container{
+    max-width: 350px;
+    margin:0 auto;
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: rgb(0, 0, 0);
+}
+.contact-wrapper{
+    align-items: center;
+    display: flex;
+    margin-left: 40px;
+}
+.contact-form h3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(46, 157, 46);
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 13px;
+    border:none;
+    box-shadow: 4px 7px 7px 0px #00000042;;
+    background-color: #f8f9fa;
+}
+
+input:focus
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(46, 157, 46);
+    color: white;
+    border: 2px solid #00000036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    transform: translateY(-20);
+}
